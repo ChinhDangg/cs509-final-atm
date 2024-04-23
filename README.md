@@ -8,6 +8,8 @@ Current admin account in the schema file:
 - login: admin
 - pass: 12345
 
+<br>
+<br>
 
 ### What software architecture are you using:
 - I follow the Model-View-Controller (MVC) architectural pattern which includes:
@@ -16,6 +18,9 @@ Current admin account in the schema file:
     - Controller: acts between the model and view
     - Service: the additional layer that handles all the business logic.
     - Repository: responsible for connecting to the database and makes all the queries.
+
+<br>
+<br>
  
 #### Virtual Machines
 ##### Pros:
