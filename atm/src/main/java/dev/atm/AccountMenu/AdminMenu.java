@@ -35,7 +35,7 @@ public class AdminMenu {
         System.out.println();
         Account acc = getExistAccountWithInputId(scanner);
         if (acc != null) {
-            System.out.println("The account information is:");
+            System.out.println("The account information details is:");
             displayAccountInfo(acc);
             return true;
         }
