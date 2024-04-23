@@ -4,6 +4,6 @@ If pull the project into with Hibernate framework, then no need to import the sc
 Else, load the schema file into MySQL database.
 
 The current connection info to the database is: login: root, password: root. with database name: atm. Change this is application.properties file if needed.
-Current admin account:
+Current admin account in the schema file:
 - login: admin
 - pass: 12345
