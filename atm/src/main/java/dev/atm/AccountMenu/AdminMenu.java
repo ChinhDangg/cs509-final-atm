@@ -122,7 +122,7 @@ public class AdminMenu {
             String id = scanner.nextLine();
             if (id.matches("\\d+"))
                 return Integer.parseInt(id);
-            System.out.println("Please enter the account number is the correct format");
+            System.out.println("Please enter the account number in the correct format");
             attempt--;
         }
         System.out.println("Too many fail attempts");
