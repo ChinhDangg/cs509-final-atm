@@ -10,3 +10,5 @@ CREATE TABLE Account (
      Status bit NOT NULL,
      PRIMARY KEY (Id)
 ) engine=InnoDB;
+
+INSERT INTO Account (Balance, HoldersName, Login, Pin, Role, Status) VALUES (30, 'admin', 'admin', 12345, 1, 1);
