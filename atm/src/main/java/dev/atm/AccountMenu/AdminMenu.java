@@ -14,6 +14,9 @@ public class AdminMenu {
         this.accountService = accountService;
     }
 
+    /**
+     * Run Menu
+     */
     public void runMenu(Scanner scanner) {
         boolean running = true;
         while (running) {

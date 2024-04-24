@@ -5,7 +5,6 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 
 import java.math.BigDecimal;
 
@@ -48,10 +47,16 @@ public class Account {
         this.role = role;
     }
 
+    /**
+     * Admin if true else Client
+     */
     public Role getCurrentRole() {
         return (role) ? Role.Admin : Role.Client;
     }
 
+    /**
+     * Active if true else Disabled
+     */
     public String getCurrentStatus() {
         return (status) ? "Active" : "Disabled";
     }

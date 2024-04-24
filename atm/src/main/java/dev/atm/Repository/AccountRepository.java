@@ -6,13 +6,18 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import java.math.BigDecimal;
 import java.util.Optional;
 
 public interface AccountRepository extends JpaRepository<Account, Integer> {
 
+    /**
+     * get account info by login and pin
+     */
     Optional<Account> findByLoginAndPin(String login, int pin);
 
+    /**
+     * update account
+     */
     @Modifying
     @Query(value = "UPDATE Account SET " +
             "Login = :login, " +

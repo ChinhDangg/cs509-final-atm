@@ -16,6 +16,9 @@ public class ClientMenu {
         this.accountService = accountService;
     }
 
+    /**
+     * Run Menu
+     */
     public void runMenu(Scanner scanner, int id) {
         boolean running = true;
         while (running) {

@@ -16,6 +16,9 @@ public class AccountService {
         this.accountRepository = accountRepository;
     }
 
+    /**
+     * check login requires login and pin
+     */
     public Account checkLogin(String login, String pin) {
         if (!login.isEmpty() && !pin.isEmpty() && pin.matches("\\d+")) {
             Optional<Account> acc = accountRepository.findByLoginAndPin(login, Integer.parseInt(pin));
@@ -25,11 +28,17 @@ public class AccountService {
         return null;
     }
 
+    /**
+     * get account by id requires id
+     */
     public Account getAccountById(int id) {
         Optional<Account> acc = accountRepository.findById(id);
         return acc.orElse(null);
     }
 
+    /**
+     * set balance requires id, amount and add or not
+     */
     @Transactional
     public BigDecimal setBalance(int id, String amount, boolean add) {
         if (amount.matches("\\d{1,8}(\\.\\d{1,2})?")) {
@@ -53,6 +62,9 @@ public class AccountService {
         return null;
     }
 
+    /**
+     * add new account requires account to add
+     */
     @Transactional
     public int addNewAccount(Account acc) {
         if (acc != null)
@@ -64,6 +76,9 @@ public class AccountService {
         return -1;
     }
 
+    /**
+     * update account requires account and id
+     */
     @Transactional
     public int updateAccount(Account acc, int id) {
         Account previous = getAccountById(id);
@@ -78,6 +93,9 @@ public class AccountService {
         return -1;
     }
 
+    /**
+     * delete account requires id
+     */
     @Transactional
     public boolean deleteAccount(int id) {
         Account acc = getAccountById(id);
@@ -91,7 +109,4 @@ public class AccountService {
         }
         return false;
     }
-
-
-
 }
