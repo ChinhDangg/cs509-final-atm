@@ -7,11 +7,12 @@ The current connection info to the database is: login: root, password: root. wit
 Current admin account in the schema file:
 - login: admin
 - pass: 12345
-
 <br>
 <br>
 
 #### The class diagrams and design drawing are in the "Diagram" directory
+<br>
+<br>
 
 ### What software architecture are you using:
 - I follow the Model-View-Controller (MVC) architectural pattern which includes:
