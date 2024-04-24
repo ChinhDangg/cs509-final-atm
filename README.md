@@ -51,3 +51,13 @@ Current admin account in the schema file:
 ##### Cons:
 - Expensive and time consuming for scaling application
 - Can only run operating system at one time
+
+<br>
+<br>
+I use github actions for CI/CD server. Github actions will run and build the project:
+- Installing MySQL and adding all setups as the application will fail if it couldn't connect to the defined database
+- Build the application with Maven
+- Run all the tests with Maven
+- Generate JavaDocs and create an artifact of the documentation in Github actions for user to download as a zip folder
+- Run the test converage defined in the Maven pom.xml file
+- Upload the test coverage to CodeCov
