@@ -63,10 +63,11 @@ jobs:
     - name: Generate JavaDoc
       run: mvn javadoc:javadoc
       working-directory: atm
+
     - name: Archive JavaDoc
       uses: actions/upload-artifact@v3
       with:
         name: javadoc
-        path: target/site/apidocs/
+        path: atm/target/site/apidocs/
 
     
