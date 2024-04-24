@@ -54,7 +54,8 @@ Current admin account in the schema file:
 
 <br>
 <br>
-I use github actions for CI/CD server. Github actions will run and build the project:
+
+#### I use github actions for CI/CD server. Github actions will run and build the project:
 - Installing MySQL and adding all setups as the application will fail if it couldn't connect to the defined database
 - Build the application with Maven
 - Run all the tests with Maven
