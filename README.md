@@ -11,6 +11,8 @@ Current admin account in the schema file:
 <br>
 <br>
 
+#### The class diagrams and design drawing are in the "Diagram" directory
+
 ### What software architecture are you using:
 - I follow the Model-View-Controller (MVC) architectural pattern which includes:
     - Model: the application's data that contain the data needs to be displayed or manipulated
